@@ -3,9 +3,8 @@
 using namespace std;
 
 int main() {
-	HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
-	SetConsoleTextAttribute(hConsole, 0x0E);
-	cout << "Hello,World!" << endl;
-	SetConsoleTextAttribute(hConsole, 0x0F);
-	cout << "/Bjarne Stroustrup/" << endl;
+	SetConsoleOutputCP(1251);
+	cout << "«вечор≥ло, н≥ч заходить,\n" << "м≥с€ць з хмари не виходить,\n" << "ан≥ з≥роньки не мр≥Ї,\n" << "т≥льки сн≥г кругом б≥л≥Ї.\n\n"
+		<< "ќсь схопилась хуртовина,\n" << "закурилас€ долина,\n" << "≥ кипить мороз у пол≥,\n" << "на простор≥ та на вол≥,\n\n" << "\t\tјвтор:  я.ўогол≥в.\n";
+	return 0;
 }
